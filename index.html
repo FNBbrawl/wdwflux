@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сундуки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <div class="auth-buttons">
+            <button onclick="register()">Регистрация</button>
+            <button onclick="login()">Войти</button>
+        </div>
+        <p id="message">Чтобы увидеть больше информации, войдите или зарегистрируйте аккаунт.</p>
+    </header>
+
+    <div class="inventory">
+        <h2>Ваш Инвентарь</h2>
+        <div id="items"></div>
+        <button onclick="openBox('rare')">Открыть Редкий сундук</button>
+        <button onclick="openBox('epic')">Открыть Эпический сундук</button>
+        <button onclick="openBox('mythical')">Открыть Мифический сундук</button>
+        <button onclick="openBox('legendary')">Открыть Легендарный сундук</button>
+        <button onclick="openBox('architectural')">Открыть Архитектурный бокс</button>
+        <div class="button-inventory">
+            <button onclick="addFunds()">Пополнить баланс</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
